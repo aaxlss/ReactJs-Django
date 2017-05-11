@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'ReactJsDocumentation.apps.ReactjsdocumentationConfig',
     'begin.apps.BeginConfig',
     'django.contrib.admin',
     'django.contrib.auth',
