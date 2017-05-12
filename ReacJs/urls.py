@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from begin.views import home
+from begin.views import home, jsonInfo
 from ReactJsDocumentation.views import index
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    url(r'^info', jsonInfo),
     url(r'^react-js-documentation', index),
     url(r'^admin/', admin.site.urls),
     url(r'^$', home)
